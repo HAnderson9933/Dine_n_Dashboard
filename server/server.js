@@ -13,6 +13,7 @@ app.use(cors({
     origin: "http://localhost:3000"
 }))
 
+app.use(cookieParser());
 
 require("./config/mongoose.config");
 require("./routes/restaurant.routes")(app);
